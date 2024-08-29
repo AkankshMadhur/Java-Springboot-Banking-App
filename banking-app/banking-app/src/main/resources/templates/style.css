@@ -1,0 +1,158 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212529; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #343a40; /* Darker container background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #495057; /* Dark sidebar background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.transaction-table {
+    background-color: #6c757d; /* Table background */
+}
+
+.transaction-table th {
+    padding: 10px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    display: none;
+    color:black;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.transaction-table {
+    border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+    border: 1px solid #fff; /* White border for better contrast */
+    padding: 8px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #6c757d; /* Same as table background */
+    color: #fff; /* White text color */
+}
+
+.ok-button {
+    background-color: #28a745; /* Green OK button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.ok-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h3>Actions</h3>
+        <ul>
+            <li><button id="addBankAccountBtn">Add Bank Account</button></li>
+            <li><button id="depositBtn">Deposit</button></li>
+            <li><button id="withdrawBtn">Withdraw</button></li>
+            <li><button id="viewTransactionsBtn">View Transactions</button></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to Banking Portal</h1>
+        <div id="transactionMessage"></div>
+        <div class="form-container" id="addBankAccountForm">
+            <h2>Add Bank Account</h2>
+            <form>
+                <div>
+                    <label for="accountHolderName">Name:</label>
+                    <input type="text" id="accountHolderName" name="accountHolderName" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="balance">Balance:</label>
+                    <input type="number" id="balance" name="balance" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div><br>
+                <div>
+                    <button type="submit">Create Bank Account</button>
+                </div>
+            </form>
+        </div>
+        <!-- Other form containers -->
+        <div class="form-container" id="depositForm">
+            <h2 style="color:black">Deposit</h2>
+            <form>
+                <div>
+                    <label for="accountNo"style="color:black">Account Number:</label>
+                    <input type="text" id="accountNo" name="accountNo" required>
+                </div>
+                <div>
+                    <label for="amount" style="color:black">Amount:</label>
+                    <input type="text" id="amount" name="amount" required>
+                </div><br>
+                <div>
+                    <button type="submit" style="color:black">Deposit Amount</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-container" id="withdrawForm">
+            <h2 style="color:black">Withdraw</h2>
+            <form>
+                <div>
+                    <label for="withdrawAccountNo" style="color:black">Account Number:</label>
+                    <input type="text" id="withdrawAccountNo" name="withdrawAccountNo" required>
+                </div>
+                <div>
+                    <label for="withdrawAmount" style="color:black">Amount:</label>
+                    <centre> <input type="text" id="withdrawAmount" name="withdrawAmount" required> </centre>
+                </div><br>
+                <div>
+                    <button type="submit" style="color:black">Withdraw Amount</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-container" id="viewTransactionsForm">
+            <h2 style="color:black" style="color:black">View Transactions</h2>
+            <form id="transactionForm">
+                <div>
+                    <label for="viewAccountNo" style="color:black">Account Number:</label>
+                    <input type="text" id="viewAccountNo" name="viewAccountNo" required>
+                </div>
+                <div>
+                    <button type="submit"style="color:black">View Transactions</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="transactionResult" style="display: none;">
+            <h2 style="color:black">Transactions</h2>
+            <ul id="transactionList"></ul>
+            <p>Total Balance: <span id="totalBalance"></span></p>
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
